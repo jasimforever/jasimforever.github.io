@@ -1,0 +1,100 @@
+@import url('https://fonts.maateen.me/charukola-ultra-light/font.css');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'CharukolaUltraLight', sans-serif;
+	font-weight: 900;
+	outline: none;
+	color: #2C3E50;
+}
+
+body{
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.wrapper{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form{
+	width: 425px;
+	height: auto;
+	background: #D39F5C;
+	padding: 35px 50px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 2px rgba(100,150,100,1);
+}
+
+.form .title{
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.form .input_wrap{
+	margin-bottom: 20px;
+	width: 325px;
+	position: relative;
+}
+
+.form .input_wrap:last-child{
+	margin-bottom: 0;
+}
+
+.form .input_wrap label{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form .input_wrap input{
+	padding: 15px;
+	width: 100%;
+	border: 1px solid transparent;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.form .input_wrap .input{
+	background: #FAE5D3;
+	padding-right: 35px;
+}
+
+
+.form .input_wrap .input:focus{
+	border-color: #82E0AA;
+}
+
+.form .input_wrap .input_field{
+	position: relative;
+}
+
+.form .input_wrap .btn{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.form .input_wrap .btn.disabled{
+	background: #273746;
+}
+
+.form .input_wrap .btn.enabled{
+	background: #2ECC71;
+	cursor: pointer;
+}
+
+.form .input_wrap .error_msg{
+	font-size: 10px;
+	margin-bottom: 5px;	
+	color: #CB4335;
+	display: none;
+}
